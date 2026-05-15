@@ -24,7 +24,6 @@ main {
 header h1 {
     margin: 0 0 0.5rem 0;
     font-size: 1.5rem;
-    color: #1a73e8;
 }
 
 header p {
@@ -79,14 +78,17 @@ li {
     border-bottom: 1px solid #eee;
     padding: 12px 10px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     animation: fadeIn 0.3s ease;
+    flex-direction: column
 }
 
 li::before {
-    content: "✅";
     margin-right: 10px;
     font-size: 0.8rem;
+}
+.date{
+    font-weight: bold
 }
 
 @keyframes fadeIn {
